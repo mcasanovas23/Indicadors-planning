@@ -40,6 +40,8 @@ thead th { background: #1F3864; color: white; padding: 10px 8px;
            position: sticky; top: 0; z-index: 2; overflow: hidden; }
 tbody td { padding: 7px 8px; border-bottom: 1px solid #E5E7EB;
            vertical-align: middle; text-align: center; overflow: hidden; text-overflow: ellipsis; }
+.planning-table { table-layout: auto; }
+.planning-table td { overflow: visible; text-overflow: clip; white-space: nowrap; }
 tbody tr:hover { background: #F9FAFB; }
 .text-left { text-align: left !important; }
 .font-bold { font-weight: 600; }
@@ -225,7 +227,7 @@ td.cob.bad { background: #FFC7CE; color: #9C0006; }
       <span id="pa-count" style="font-size:12px;color:#6B7280;margin-left:auto"></span>
     </div>
     <div class="scroll-x"><div class="scroll-y">
-      <table><thead><tr>
+      <table class="planning-table"><thead><tr>
       <th style="text-align:left">Artículo</th><th>Medida</th><th>Familia</th>
       <th>Lot</th><th>S</th><th>Stent (SE)</th><th>Lot Qty</th>
       <th>Fec. entrega</th><th>Estado</th><th>Uds fabricar</th>
@@ -244,7 +246,7 @@ td.cob.bad { background: #FFC7CE; color: #9C0006; }
       <span id="se-count" style="font-size:12px;color:#6B7280;margin-left:auto"></span>
     </div>
     <div class="scroll-x"><div class="scroll-y">
-      <table><thead><tr>
+      <table class="planning-table"><thead><tr>
       <th style="text-align:left">Artículo</th><th>Medida</th><th>Familia</th>
       <th>Lot</th><th>S</th><th>Fábrica</th><th>Peces lot</th>
       <th style="text-align:left">Fase actual</th><th>Data inici</th><th style="text-align:left">Txt</th>
