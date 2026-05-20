@@ -249,7 +249,7 @@ td.cob.bad { background: #FFC7CE; color: #9C0006; }
     </tr></thead><tbody id="se-tbody"></tbody></table>
     </div></div>
   </div>
-  <script>buildSE();</script>
+
 </div>
 
 <!-- INVENTARI -->
@@ -258,7 +258,6 @@ td.cob.bad { background: #FFC7CE; color: #9C0006; }
     <h2>Stock disponible por familia</h2>
     <div id="inv-grid" class="inv-grid"></div>
   </div>
-  <script>buildInv();</script>
 </div>
 
 <!-- CADUCIDADES DES -->
@@ -270,7 +269,6 @@ td.cob.bad { background: #FFC7CE; color: #9C0006; }
     </p>
     <div id="cad-container"></div>
   </div>
-  <script>buildCaducidades();</script>
 </div>
 
 </main>
@@ -512,8 +510,11 @@ function buildCaducidades(){
 document.addEventListener('DOMContentLoaded', () => {
   showTab('tab-dashboard');
   buildDashboard();
-
   DATA.fam_order.forEach(fam => buildMatrix(fam));
+  buildPA();
+  buildSE();
+  buildInv();
+  buildCaducidades();
 
   document.getElementById('pa-f-fam').addEventListener('change', e => { paFilter.familia = e.target.value; refreshPA(); });
   document.getElementById('pa-f-sem').addEventListener('change', e => { paFilter.semana  = e.target.value; refreshPA(); });
@@ -526,6 +527,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 </script>
-<script>buildPA();</script>
 </body>
 </html>
