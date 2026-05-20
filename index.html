@@ -116,35 +116,40 @@ td.cob { text-align: center; font-variant-numeric: tabular-nums; padding: 6px 4p
 .fam-tab-title  { font-size: 20px; font-weight: 700; color: white; letter-spacing: .3px; }
 
 /* Per-family header + section title + table header colors */
-.fam-tab-ivolutio .fam-tab-header { background: #B45309; }
-.fam-tab-ivolutio thead th        { background: #B45309; color: white; }
+.fam-tab-ivolutio .fam-tab-header { background: #FFEB9C; }
+.fam-tab-ivolutio .fam-tab-title  { color: #000; }
+.fam-tab-ivolutio thead th        { background: #FFEB9C; color: #000; }
 .fam-tab-ivolutio .card h2        { background: #FFEB9C; color: #000; font-weight: 700; }
-.fam-tab-ivolutio .card           { border-top: 3px solid #B45309; }
+.fam-tab-ivolutio .card           { border-top: 3px solid #FFEB9C; }
 
-.fam-tab-angiolit .fam-tab-header { background: #5B2D8E; }
-.fam-tab-angiolit thead th        { background: #5B2D8E; color: white; }
+.fam-tab-angiolit .fam-tab-header { background: #C9B1D9; }
+.fam-tab-angiolit .fam-tab-title  { color: #000; }
+.fam-tab-angiolit thead th        { background: #C9B1D9; color: #000; }
 .fam-tab-angiolit .card h2        { background: #C9B1D9; color: #000; font-weight: 700; }
-.fam-tab-angiolit .card           { border-top: 3px solid #5B2D8E; }
+.fam-tab-angiolit .card           { border-top: 3px solid #C9B1D9; }
 
-.fam-tab-naviscor .fam-tab-header { background: #1E3A8A; }
-.fam-tab-naviscor thead th        { background: #1E3A8A; color: white; }
+.fam-tab-naviscor .fam-tab-header { background: #BFDBFE; }
+.fam-tab-naviscor .fam-tab-title  { color: #000; }
+.fam-tab-naviscor thead th        { background: #BFDBFE; color: #000; }
 .fam-tab-naviscor .card h2        { background: #BFDBFE; color: #000; font-weight: 700; }
-.fam-tab-naviscor .card           { border-top: 3px solid #1E3A8A; }
+.fam-tab-naviscor .card           { border-top: 3px solid #BFDBFE; }
 
 .fam-tab-restorer .fam-tab-header { background: #1A6B3A; }
-.fam-tab-restorer thead th        { background: #1A6B3A; color: white; }
+.fam-tab-restorer thead th        { background: #1A6B3A; color: #fff; }
 .fam-tab-restorer .card h2        { background: #1A6B3A; color: #fff; font-weight: 700; }
 .fam-tab-restorer .card           { border-top: 3px solid #1A6B3A; }
 
-.fam-tab-icover .fam-tab-header   { background: #9C1C1C; }
-.fam-tab-icover thead th          { background: #9C1C1C; color: white; }
+.fam-tab-icover .fam-tab-header   { background: #FFBCBC; }
+.fam-tab-icover .fam-tab-title    { color: #000; }
+.fam-tab-icover thead th          { background: #FFBCBC; color: #000; }
 .fam-tab-icover .card h2          { background: #FFBCBC; color: #000; font-weight: 700; }
-.fam-tab-icover .card             { border-top: 3px solid #9C1C1C; }
+.fam-tab-icover .card             { border-top: 3px solid #FFBCBC; }
 
-.fam-tab-intercep .fam-tab-header { background: #166534; }
-.fam-tab-intercep thead th        { background: #166534; color: white; }
+.fam-tab-intercep .fam-tab-header { background: #D1FAE5; }
+.fam-tab-intercep .fam-tab-title  { color: #000; }
+.fam-tab-intercep thead th        { background: #D1FAE5; color: #000; }
 .fam-tab-intercep .card h2        { background: #D1FAE5; color: #000; font-weight: 700; }
-.fam-tab-intercep .card           { border-top: 3px solid #166534; }
+.fam-tab-intercep .card           { border-top: 3px solid #D1FAE5; }
 
 /* Stock bar column */
 .stock-bar-cell  { padding: 4px 8px !important; min-width: 80px; width: 110px; }
@@ -173,9 +178,9 @@ td.cob { text-align: center; font-variant-numeric: tabular-nums; padding: 6px 4p
 <body>
 <header>
   <h1>Indicadores Stock Stents</h1>
-  <div class="meta">Semana actual: <b>21</b> · Ventana: semanas 21–26 · Generado: 20/05/2026 20:30</div>
+  <div class="meta">Semana actual: <b>21</b> · Ventana: semanas 21–26 · Generado: 20/05/2026 20:43</div>
 </header>
-<nav class="tabs"><button data-tab="tab-dashboard" onclick="showTab('tab-dashboard')">Dashboard</button><button data-tab="tab-ivolutio" onclick="showTab('tab-ivolutio')">IVOLUTIO</button><button data-tab="tab-angiolit" onclick="showTab('tab-angiolit')">ANGIOLIT (incl. ANGIOBTK)</button><button data-tab="tab-naviscor" onclick="showTab('tab-naviscor')">NAVISCOR</button><button data-tab="tab-restorer" onclick="showTab('tab-restorer')">RESTORER</button><button data-tab="tab-icover" onclick="showTab('tab-icover')">ICOVER (incl. TUVA)</button><button data-tab="tab-intercep" onclick="showTab('tab-intercep')">INTERCEP</button><button data-tab="tab-planning-pa" onclick="showTab('tab-planning-pa')">Planning PA</button><button data-tab="tab-planning-se" onclick="showTab('tab-planning-se')">Planning SE</button><button data-tab="tab-inventari" onclick="showTab('tab-inventari')">Inventari</button><button data-tab="tab-caducidades" onclick="showTab('tab-caducidades')">Caducidades DES</button></nav>
+<nav class="tabs"><button data-tab="tab-dashboard" onclick="showTab('tab-dashboard')">Resumen</button><button data-tab="tab-ivolutio" onclick="showTab('tab-ivolutio')">IVOLUTION</button><button data-tab="tab-angiolit" onclick="showTab('tab-angiolit')">ANGIOLITE</button><button data-tab="tab-naviscor" onclick="showTab('tab-naviscor')">NAVISCORE</button><button data-tab="tab-restorer" onclick="showTab('tab-restorer')">RESTORER</button><button data-tab="tab-icover" onclick="showTab('tab-icover')">ICOVER</button><button data-tab="tab-intercep" onclick="showTab('tab-intercep')">INTERCEPT</button><button data-tab="tab-planning-pa" onclick="showTab('tab-planning-pa')">Planning PA</button><button data-tab="tab-planning-se" onclick="showTab('tab-planning-se')">Planning SE</button><button data-tab="tab-inventari" onclick="showTab('tab-inventari')">Inventario</button><button data-tab="tab-caducidades" onclick="showTab('tab-caducidades')">Caducidades DES</button></nav>
 <main>
 
 <!-- DASHBOARD -->
@@ -221,7 +226,7 @@ td.cob { text-align: center; font-variant-numeric: tabular-nums; padding: 6px 4p
 </div>
 
 <!-- FAMILY TABS -->
-<div class="tab-panel fam-tab-ivolutio" id="tab-ivolutio"><div class="fam-tab-header"><span class="fam-tab-title">IVOLUTIO</span></div><div id="matrix-IVOLUTIO"></div></div><div class="tab-panel fam-tab-angiolit" id="tab-angiolit"><div class="fam-tab-header"><span class="fam-tab-title">ANGIOLIT (incl. ANGIOBTK)</span></div><div id="matrix-ANGIOLIT"></div></div><div class="tab-panel fam-tab-naviscor" id="tab-naviscor"><div class="fam-tab-header"><span class="fam-tab-title">NAVISCOR</span></div><div id="matrix-NAVISCOR"></div></div><div class="tab-panel fam-tab-restorer" id="tab-restorer"><div class="fam-tab-header"><span class="fam-tab-title">RESTORER</span></div><div id="matrix-RESTORER"></div></div><div class="tab-panel fam-tab-icover" id="tab-icover"><div class="fam-tab-header"><span class="fam-tab-title">ICOVER (incl. TUVA)</span></div><div id="matrix-ICOVER"></div></div><div class="tab-panel fam-tab-intercep" id="tab-intercep"><div class="fam-tab-header"><span class="fam-tab-title">INTERCEP</span></div><div id="matrix-INTERCEP"></div></div>
+<div class="tab-panel fam-tab-ivolutio" id="tab-ivolutio"><div class="fam-tab-header"><span class="fam-tab-title">IVOLUTION</span></div><div id="matrix-IVOLUTIO"></div></div><div class="tab-panel fam-tab-angiolit" id="tab-angiolit"><div class="fam-tab-header"><span class="fam-tab-title">ANGIOLITE</span></div><div id="matrix-ANGIOLIT"></div></div><div class="tab-panel fam-tab-naviscor" id="tab-naviscor"><div class="fam-tab-header"><span class="fam-tab-title">NAVISCORE</span></div><div id="matrix-NAVISCOR"></div></div><div class="tab-panel fam-tab-restorer" id="tab-restorer"><div class="fam-tab-header"><span class="fam-tab-title">RESTORER</span></div><div id="matrix-RESTORER"></div></div><div class="tab-panel fam-tab-icover" id="tab-icover"><div class="fam-tab-header"><span class="fam-tab-title">ICOVER</span></div><div id="matrix-ICOVER"></div></div><div class="tab-panel fam-tab-intercep" id="tab-intercep"><div class="fam-tab-header"><span class="fam-tab-title">INTERCEPT</span></div><div id="matrix-INTERCEP"></div></div>
 
 <!-- PLANNING PA -->
 <div class="tab-panel" id="tab-planning-pa">
@@ -306,8 +311,8 @@ const DATA = {"semana_actual": 21, "weeks": [21, 22, 23, 24, 25, 26], "kpis": [{
 <script>
 
 const FAM_NAMES = {
-  ICOVER:'ICOVER (incl. TUVA)', ANGIOLIT:'ANGIOLIT (incl. ANGIOBTK)',
-  NAVISCOR:'NAVISCOR', IVOLUTIO:'IVOLUTIO', RESTORER:'RESTORER', INTERCEP:'INTERCEP'
+  ICOVER:'ICOVER (incl. TUVA)', ANGIOLIT:'ANGIOLITE (incl. ANGIOBTK)',
+  NAVISCOR:'NAVISCORE', IVOLUTIO:'IVOLUTION', RESTORER:'RESTORER', INTERCEP:'INTERCEPT'
 };
 
 function fmt(v){ return v==null?'':v.toLocaleString('es-ES'); }
@@ -378,8 +383,8 @@ function buildDashboard(){
 
 // ── FAMILY MATRIX ──
 const FAM_BAR_COLOR = {
-  IVOLUTIO:'#D97706', ANGIOLIT:'#7C3AED', NAVISCOR:'#2563EB',
-  RESTORER:'#16A34A', ICOVER:'#DC2626',   INTERCEP:'#059669'
+  IVOLUTIO:'#FFEB9C', ANGIOLIT:'#C9B1D9', NAVISCOR:'#BFDBFE',
+  RESTORER:'#1A6B3A', ICOVER:'#FFBCBC',   INTERCEP:'#D1FAE5'
 };
 function buildMatrix(fam){
   const container = document.getElementById('matrix-'+fam);
