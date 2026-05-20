@@ -84,7 +84,7 @@ td.cob.bad { background: #FFC7CE; color: #9C0006; }
                  background: linear-gradient(180deg, #305496, #1F3864); }
 .dash-pct      { font-size: 13px; font-weight: 700; text-align: center; color: #1F3864;
                  margin-bottom: 10px; }
-.dash-table    { font-size: 11.5px; width: 100%; border-collapse: collapse; }
+.dash-table    { font-size: 11.5px; width: 100%; border-collapse: collapse; table-layout: auto; }
 .dash-table th { background: #F9FAFB; color: #6B7280; font-size: 10.5px; font-weight: 600;
                  padding: 5px 4px; text-align: center; border-bottom: 1px solid #E5E7EB; }
 .dash-table td { padding: 4px; text-align: center; border-bottom: 1px solid #F3F4F6;
@@ -99,18 +99,20 @@ td.cob.bad { background: #FFC7CE; color: #9C0006; }
             box-shadow: 0 1px 3px rgba(0,0,0,.06); overflow: hidden; }
 .inv-box-header { background: #1F3864; color: white; padding: 8px 12px;
                   font-size: 12px; font-weight: 700; text-transform: uppercase; }
-.inv-box table { font-size: 12px; }
+.inv-box table { font-size: 12px; table-layout: auto; width: 100%; }
 .inv-box thead th { background: #D9E1F2; color: #1F3864; font-size: 11px; }
 .inv-box tbody td { padding: 5px 10px; }
 
 /* ── CADUCIDADES ── */
 .cad-scroll { overflow-x: auto; }
-.cad-table  { font-size: 11.5px; border-collapse: collapse; }
+.cad-table  { font-size: 11.5px; border-collapse: collapse; table-layout: auto; width: auto; }
 .cad-table th { background: #1F3864; color: white; padding: 8px 10px; text-align: center;
                 font-size: 11px; white-space: nowrap; }
-.cad-table td { padding: 6px 10px; border: 1px solid #E5E7EB; text-align: center; min-width: 60px; }
+.cad-table td { padding: 6px 10px; border: 1px solid #E5E7EB; text-align: center;
+                min-width: 52px; overflow: visible; text-overflow: clip; white-space: nowrap; }
 .cad-table td.art { text-align: left; font-family: monospace; font-size: 11px;
-                    background: #F9FAFB; font-weight: 600; white-space: nowrap; }
+                    background: #F9FAFB; font-weight: 600; white-space: nowrap;
+                    min-width: 90px; }
 </style>
 </head>
 <body>
